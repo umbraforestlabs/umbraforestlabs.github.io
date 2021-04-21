@@ -81,10 +81,26 @@
                            
                             <button type="button" class="btn btn-primary">Ver Tutorial</button>
                             
-                            <a data-fancybox="gallery" href="big_1.jpg"><img src="assets/img/profile.png"></a>
-<a data-fancybox="gallery" href="big_2.jpg"><img src="assets/img/profile.png"></a>    
+                            <script>
+                            
+                            
+                            $.fancybox.open({
+	src  : 'link-to-your-page.html',
+	type : 'iframe',
+	opts : {
+		afterShow : function( instance, current ) {
+			console.info( 'done!' );
+		}
+	}
+});
+                            
+                            
+                            </script>
                                 
-                                assets/img
+                                
+                                <a id="test" href="javascript:;" class="btn btn-primary">Open demo</a>  
+                                
+                               
                                 
                             </div>
 
